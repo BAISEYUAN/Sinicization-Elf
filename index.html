@@ -1,1 +1,82 @@
-<!DOCTYPE html><html lang="zh-CN"><head><meta charset="UTF-8"><meta name="viewport" content="width=device-width,initial-scale=1.0"><title>汉化精灵</title><style>*{margin:0;padding:0;box-sizing:border-box}body{font-family:'Microsoft YaHei',sans-serif;background:#0f172a;color:#e2e8f0}.hero{text-align:center;padding:80px 20px 40px;max-width:600px;margin:0 auto}.hero .icon{width:72px;height:72px;background:linear-gradient(135deg,#6366f1,#8b5cf6);border-radius:20px;display:flex;align-items:center;justify-content:center;margin:0 auto 20px;font-size:36px;box-shadow:0 8px 32px rgba(99,102,241,0.4)}.hero h1{font-size:40px;font-weight:800;background:linear-gradient(135deg,#a5b4fc,#c4b5fd);-webkit-background-clip:text;background-clip:text;color:transparent;margin-bottom:12px}.hero p{font-size:16px;color:#94a3b8;margin-bottom:12px}.hero .price{font-size:36px;font-weight:800;color:#fbbf24;margin-bottom:24px}.hero .btn{display:inline-block;background:linear-gradient(135deg,#6366f1,#8b5cf6);color:#fff;padding:16px 56px;border-radius:14px;font-size:18px;font-weight:700;text-decoration:none;box-shadow:0 4px 24px rgba(99,102,241,0.4);border:none;cursor:pointer}.qr-box{display:none;text-align:center;padding:32px;background:rgba(30,41,59,0.6);border-radius:14px;max-width:360px;margin:0 auto}.qr-box.show{display:block}.qr-box img{width:220px;height:220px;border-radius:12px;margin-bottom:12px}.qr-box p{color:#94a3b8;font-size:14px;margin-bottom:16px}.qr-box .dl-btn{background:#22c55e;color:#fff;padding:12px 40px;border-radius:10px;font-size:16px;font-weight:600;border:none;cursor:pointer}.ft{text-align:center;padding:24px;color:#475569;font-size:13px;border-top:1px solid rgba(99,102,241,0.1)}</style></head><body><div class="hero"><div class="icon">+</div><h1>汉化精灵</h1><p>一键让 ChatGPT 桌面版显示中文<br>无需注册，跑完即用</p><div class="price">2.99 元</div><button class="btn" onclick="document.getElementById('q').className='qr-box show';this.style.display='none'">立即购买</button></div><div class="qr-box" id="q"><img src="https://api.qrserver.com/v1/create-qr-code/?size=220x220&data=weixin://wxp/normalpay?amount=2.99" alt="微信支付"><p>打开微信扫一扫，支付 <b>2.99 元</b></p><button class="dl-btn" onclick="window.location.href='汉化精灵.zip'">我已付款，立即下载</button><p style="font-size:12px;color:#475569;margin-top:8px">付完下不了？加微信 BMAX0618</p></div><div class="ft">汉化精灵 · 让每个人都能用上中文ChatGPT</div></body></html>
+<!DOCTYPE html><html lang="zh-CN"><head><meta charset="UTF-8"><meta name="viewport" content="width=device-width,initial-scale=1.0"><title>汉化精灵 - 一键汉化ChatGPT桌面版</title><style>
+*{margin:0;padding:0;box-sizing:border-box}body{font-family:'Microsoft YaHei','PingFang SC',sans-serif;background:#0f172a;color:#e2e8f0;line-height:1.7}
+.hero{text-align:center;padding:80px 20px 50px;max-width:700px;margin:0 auto}
+.hero .icon{width:72px;height:72px;background:linear-gradient(135deg,#6366f1,#8b5cf6);border-radius:20px;display:flex;align-items:center;justify-content:center;margin:0 auto 20px;font-size:34px;box-shadow:0 8px 32px rgba(99,102,241,0.4)}
+.hero h1{font-size:42px;font-weight:800;background:linear-gradient(135deg,#a5b4fc,#c4b5fd);-webkit-background-clip:text;background-clip:text;color:transparent;margin-bottom:12px;letter-spacing:2px}
+.hero p{font-size:17px;color:#94a3b8;margin-bottom:16px}
+.hero .price{font-size:36px;font-weight:800;color:#fbbf24;margin-bottom:24px}
+.hero .price span{font-size:14px;color:#64748b;text-decoration:line-through;margin-right:8px}
+.hero .btn{display:inline-block;background:linear-gradient(135deg,#6366f1,#8b5cf6);color:#fff;padding:16px 56px;border-radius:14px;font-size:18px;font-weight:700;text-decoration:none;box-shadow:0 4px 24px rgba(99,102,241,0.4);border:none;cursor:pointer;transition:0.3s;letter-spacing:1px}
+.hero .btn:hover{transform:translateY(-2px);box-shadow:0 8px 32px rgba(99,102,241,0.6)}
+.hero .note{font-size:13px;color:#475569;margin-top:12px}
+.sec{padding:50px 20px;max-width:700px;margin:0 auto}
+.sec h2{font-size:24px;color:#a5b4fc;text-align:center;margin-bottom:32px}
+.grid{display:grid;grid-template-columns:1fr 1fr;gap:16px;margin-bottom:40px}
+.g{background:rgba(30,41,59,0.6);border:1px solid rgba(99,102,241,0.1);border-radius:12px;padding:24px}
+.g h3{font-size:15px;margin-bottom:6px;color:#e2e8f0}
+.g p{font-size:14px;color:#64748b}
+.st{display:flex;gap:16px;margin-bottom:40px}
+.stp{flex:1;text-align:center;background:rgba(30,41,59,0.5);border:1px solid rgba(99,102,241,0.08);border-radius:12px;padding:20px 12px}
+.stp .n{width:36px;height:36px;background:rgba(99,102,241,0.2);border-radius:50%;display:flex;align-items:center;justify-content:center;margin:0 auto 10px;font-weight:700;color:#a5b4fc}
+.stp h4{font-size:14px;color:#e2e8f0;margin-bottom:4px}
+.stp p{font-size:13px;color:#64748b}
+.pay-box{display:none;text-align:center;padding:36px;background:rgba(30,41,59,0.6);border:1px solid rgba(99,102,241,0.15);border-radius:16px;max-width:380px;margin:0 auto 40px}
+.pay-box.on{display:block}
+.pay-box img{width:220px;height:220px;border:2px solid rgba(99,102,241,0.2);border-radius:12px;margin-bottom:16px}
+.pay-box .price-big{font-size:28px;font-weight:800;color:#fbbf24;margin-bottom:12px}
+.pay-box p{color:#94a3b8;font-size:14px;margin-bottom:16px}
+.pay-box .dl{display:inline-block;background:#22c55e;color:#fff;padding:14px 44px;border-radius:10px;font-size:16px;font-weight:600;text-decoration:none;border:none;cursor:pointer;transition:0.3s}
+.pay-box .dl:hover{background:#16a34a}
+.pay-box .wxid{font-size:12px;color:#475569;margin-top:10px}
+.faq .q{background:rgba(30,41,59,0.4);border:1px solid rgba(99,102,241,0.06);border-radius:10px;padding:16px 20px;margin-bottom:10px}
+.faq .q b{display:block;font-size:14px;color:#e2e8f0;margin-bottom:4px}
+.faq .q span{font-size:14px;color:#94a3b8}
+.ft{text-align:center;padding:24px;color:#475569;font-size:13px;border-top:1px solid rgba(99,102,241,0.1)}
+@media(max-width:640px){.hero h1{font-size:28px}.grid{grid-template-columns:1fr}.st{flex-direction:column}}
+</style></head><body>
+
+<div class="hero">
+<div class="icon">+</div>
+<h1>汉化精灵</h1>
+<p>一键让 ChatGPT 桌面版显示中文<br>无需注册、无需配置，跑完即用</p>
+<div class="price"><span>29.9元</span>2.99 元</div>
+<button class="btn" onclick="document.getElementById('pay').className='pay-box on';this.style.display='none'">立即购买</button>
+<div class="note">支持 Windows 10/11 | 微软商店版 ChatGPT | 永久有效</div>
+</div>
+
+<div class="pay-box" id="pay">
+<div class="price-big">2.99 元</div>
+<img src="wechat-pay.jpg" alt="微信支付二维码" onerror="this.alt='请将你的微信收款码截图保存为 wechat-pay.jpg 上传到仓库'">
+<p>打开微信扫一扫支付</p>
+<button class="dl" onclick="window.location.href='汉化精灵.zip'">我已付款，立即下载</button>
+<div class="wxid">付完无法下载？加微信 BMAX0618</div>
+</div>
+
+<div class="sec">
+<div class="grid">
+<div class="g"><h3>⚡ 一键完成</h3><p>双击运行，等待10-20分钟，ChatGPT自动变中文</p></div>
+<div class="g"><h3>🛡️ 安全可靠</h3><p>使用ChatGPT官方内置中文语言包，不修改任何功能</p></div>
+<div class="g"><h3>🔄 永久生效</h3><p>ChatGPT升级后不会变回英文，一次安装长期使用</p></div>
+<div class="g"><h3>💻 简单易用</h3><p>右键以管理员身份运行，点击开始，坐等完成</p></div>
+</div>
+
+<h2>三步使用</h2>
+<div class="st">
+<div class="stp"><div class="n">1</div><h4>付款下载</h4><p>扫码支付2.99元，自动获取软件包</p></div>
+<div class="stp"><div class="n">2</div><h4>关闭ChatGPT</h4><p>确保ChatGPT完全退出，包括右下角托盘图标</p></div>
+<div class="stp"><div class="n">3</div><h4>右键管理员运行</h4><p>点击开始，等待10-20分钟完成汉化</p></div>
+</div>
+</div>
+
+<div class="sec">
+<h2>常见问题</h2>
+<div class="faq">
+<div class="q"><b>影响ChatGPT正常使用吗？</b><span>不会。只开启中文界面，不影响对话记录、账号状态或任何功能。</span></div>
+<div class="q"><b>升级后需要重新汉化吗？</b><span>通常不需要。如升级后变回英文，重新运行本软件即可，无需再次购买。</span></div>
+<div class="q"><b>Mac 能用吗？</b><span>暂不支持，仅支持 Windows 10/11 微软商店版ChatGPT。</span></div>
+<div class="q"><b>付款后无法下载怎么办？</b><span>加微信 BMAX0618，发付款截图，我直接发你文件。</span></div>
+</div>
+</div>
+
+<div class="ft">汉化精灵 · 让每个人都能用上中文ChatGPT</div>
+</body></html>
