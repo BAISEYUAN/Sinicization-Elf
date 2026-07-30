@@ -40,10 +40,10 @@
 <div class="note">支持 Windows 10/11 | 微软商店版 ChatGPT | 永久有效</div>
 </div>
 <div class="dl-box" id="dl">
-<input type="text" id="code" placeholder="输入提取码" maxlength="7" onkeydown="if(event.key==='Enter')check()">
+<input type="text" id="code" placeholder="请输入提取码" maxlength="7" onkeydown="if(event.key==='Enter')check()">
 <div class="error" id="err">提取码格式错误</div>
 <button class="dl" onclick="check()">验证并下载</button>
-<div class="fmt">格式: 3字母 + 3数字 + y（如 abc123y）</div>
+
 </div>
 <script>function check(){var c=document.getElementById('code').value;if(/^[A-Za-z]{3}\d{3}y$/.test(c)){window.location.href='汉化精灵.zip'}else{var e=document.getElementById('err');e.className='error on';setTimeout(function(){e.className='error'},3000)}}</script>
 <div class="sec">
@@ -68,3 +68,4 @@
 </div></div>
 <div class="ft">汉化精灵 · 让每个人都能用上中文ChatGPT</div>
 </body></html>
+
