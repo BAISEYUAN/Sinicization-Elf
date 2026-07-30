@@ -1,4 +1,4 @@
-﻿<!DOCTYPE html><html lang="zh-CN"><head><meta charset="UTF-8"><meta name="viewport" content="width=device-width,initial-scale=1.0"><title>汉化精灵 - 一键汉化ChatGPT桌面版</title><style>
+<!DOCTYPE html><html lang="zh-CN"><head><meta charset="UTF-8"><meta name="viewport" content="width=device-width,initial-scale=1.0"><title>汉化精灵 - 一键汉化ChatGPT桌面版</title><style>
 *{margin:0;padding:0;box-sizing:border-box}body{font-family:'Microsoft YaHei','PingFang SC',sans-serif;background:#0f172a;color:#e2e8f0;line-height:1.7}
 .hero{text-align:center;padding:80px 20px 50px;max-width:700px;margin:0 auto}
 .hero .icon{width:72px;height:72px;background:linear-gradient(135deg,#6366f1,#8b5cf6);border-radius:20px;display:flex;align-items:center;justify-content:center;margin:0 auto 20px;font-size:34px;box-shadow:0 8px 32px rgba(99,102,241,0.4)}
@@ -13,28 +13,27 @@
 .sec h2{font-size:24px;color:#a5b4fc;text-align:center;margin-bottom:32px}
 .grid{display:grid;grid-template-columns:1fr 1fr;gap:16px;margin-bottom:40px}
 .g{background:rgba(30,41,59,0.6);border:1px solid rgba(99,102,241,0.1);border-radius:12px;padding:24px}
-.g h3{font-size:15px;margin-bottom:6px;color:#e2e8f0}
-.g p{font-size:14px;color:#64748b}
+.g h3{font-size:15px;margin-bottom:6px;color:#e2e8f0}.g p{font-size:14px;color:#64748b}
 .st{display:flex;gap:16px;margin-bottom:40px}
 .stp{flex:1;text-align:center;background:rgba(30,41,59,0.5);border:1px solid rgba(99,102,241,0.08);border-radius:12px;padding:20px 12px}
 .stp .n{width:36px;height:36px;background:rgba(99,102,241,0.2);border-radius:50%;display:flex;align-items:center;justify-content:center;margin:0 auto 10px;font-weight:700;color:#a5b4fc}
-.stp h4{font-size:14px;color:#e2e8f0;margin-bottom:4px}
-.stp p{font-size:13px;color:#64748b}
-.pay-box{display:none;text-align:center;padding:36px;background:rgba(30,41,59,0.6);border:1px solid rgba(99,102,241,0.15);border-radius:16px;max-width:380px;margin:0 auto 40px}
+.stp h4{font-size:14px;color:#e2e8f0;margin-bottom:4px}.stp p{font-size:13px;color:#64748b}
+.pay-box{display:none;text-align:center;padding:36px;background:rgba(30,41,59,0.6);border:1px solid rgba(99,102,241,0.15);border-radius:16px;max-width:400px;margin:0 auto 40px}
 .pay-box.on{display:block}
 .pay-box img{width:220px;height:220px;border:2px solid rgba(99,102,241,0.2);border-radius:12px;margin-bottom:16px}
 .pay-box .price-big{font-size:28px;font-weight:800;color:#fbbf24;margin-bottom:12px}
-.pay-box p{color:#94a3b8;font-size:14px;margin-bottom:16px}
+.pay-box .step1{font-size:14px;color:#e2e8f0;margin-bottom:6px}.pay-box .step2{font-size:13px;color:#94a3b8;margin-bottom:16px}
 .pay-box .dl{display:inline-block;background:#22c55e;color:#fff;padding:14px 44px;border-radius:10px;font-size:16px;font-weight:600;text-decoration:none;border:none;cursor:pointer;transition:0.3s}
 .pay-box .dl:hover{background:#16a34a}
-.pay-box .wxid{font-size:12px;color:#475569;margin-top:10px}
+.pay-box .check{font-size:12px;color:#475569;margin-top:8px}
 .faq .q{background:rgba(30,41,59,0.4);border:1px solid rgba(99,102,241,0.06);border-radius:10px;padding:16px 20px;margin-bottom:10px}
-.faq .q b{display:block;font-size:14px;color:#e2e8f0;margin-bottom:4px}
-.faq .q span{font-size:14px;color:#94a3b8}
+.faq .q b{display:block;font-size:14px;color:#e2e8f0;margin-bottom:4px}.faq .q span{font-size:14px;color:#94a3b8}
 .ft{text-align:center;padding:24px;color:#475569;font-size:13px;border-top:1px solid rgba(99,102,241,0.1)}
 @media(max-width:640px){.hero h1{font-size:28px}.grid{grid-template-columns:1fr}.st{flex-direction:column}}
+@keyframes spin{to{transform:rotate(360deg)}}
+.spinner{display:none;width:24px;height:24px;border:3px solid rgba(99,102,241,0.2);border-top-color:#6366f1;border-radius:50%;animation:spin 0.8s linear infinite;margin:0 auto 10px}
+.spinner.on{display:block}
 </style></head><body>
-
 <div class="hero">
 <div class="icon">+</div>
 <h1>汉化精灵</h1>
@@ -43,15 +42,18 @@
 <button class="btn" onclick="document.getElementById('pay').className='pay-box on';this.style.display='none'">立即购买</button>
 <div class="note">支持 Windows 10/11 | 微软商店版 ChatGPT | 永久有效</div>
 </div>
-
 <div class="pay-box" id="pay">
 <div class="price-big">2.99 元</div>
-<img src="wechat-pay.jpg" alt="微信支付二维码" onerror="this.alt='请将你的微信收款码截图保存为 wechat-pay.jpg 上传到仓库'">
-<p>打开微信扫一扫支付</p>
-<button class="dl" onclick="window.location.href='汉化精灵.zip'">我已付款，立即下载</button>
-<div class="wxid">付完无法下载？加微信 BMAX0618</div>
+<img src="wechat-pay.jpg" alt="微信支付二维码">
+<p class="step1">长按扫码支付 <b>2.99 元</b></p>
+<p class="step2">支付完成后点击下方按钮立即下载</p>
+<div class="spinner" id="spinner"></div>
+<button class="dl" onclick="payAndDownload()" id="dlBtn">我已付款，立即下载</button>
+<div class="check">点击即表示你已完成支付</div>
 </div>
-
+<script>
+function payAndDownload(){var s=document.getElementById('spinner');s.className='spinner on';var b=document.getElementById('dlBtn');b.style.display='none';setTimeout(function(){window.location.href='汉化精灵.zip'},2000)}
+</script>
 <div class="sec">
 <div class="grid">
 <div class="g"><h3>⚡ 一键完成</h3><p>双击运行，等待10-20分钟，ChatGPT自动变中文</p></div>
@@ -59,24 +61,18 @@
 <div class="g"><h3>🔄 永久生效</h3><p>ChatGPT升级后不会变回英文，一次安装长期使用</p></div>
 <div class="g"><h3>💻 简单易用</h3><p>右键以管理员身份运行，点击开始，坐等完成</p></div>
 </div>
-
 <h2>三步使用</h2>
 <div class="st">
-<div class="stp"><div class="n">1</div><h4>付款下载</h4><p>扫码支付2.99元，自动获取软件包</p></div>
+<div class="stp"><div class="n">1</div><h4>付款下载</h4><p>扫码支付2.99元</p></div>
 <div class="stp"><div class="n">2</div><h4>关闭ChatGPT</h4><p>确保ChatGPT完全退出，包括右下角托盘图标</p></div>
 <div class="stp"><div class="n">3</div><h4>右键管理员运行</h4><p>点击开始，等待10-20分钟完成汉化</p></div>
 </div>
 </div>
-
-<div class="sec">
-<h2>常见问题</h2>
+<div class="sec"><h2>常见问题</h2>
 <div class="faq">
-<div class="q"><b>影响ChatGPT正常使用吗？</b><span>不会。只开启中文界面，不影响对话记录、账号状态或任何功能。</span></div>
-<div class="q"><b>升级后需要重新汉化吗？</b><span>通常不需要。如升级后变回英文，重新运行本软件即可，无需再次购买。</span></div>
-<div class="q"><b>Mac 能用吗？</b><span>暂不支持，仅支持 Windows 10/11 微软商店版ChatGPT。</span></div>
-<div class="q"><b>付款后无法下载怎么办？</b><span>加微信 BMAX0618，发付款截图，我直接发你文件。</span></div>
-</div>
-</div>
-
+<div class="q"><b>影响正常使用吗？</b><span>不会。只改界面语言，不影响任何功能。</span></div>
+<div class="q"><b>下载链接怎么获取？</b><span>扫码支付后点「我已付款」，2秒后自动开始下载。</span></div>
+<div class="q"><b>升级了怎么办？</b><span>重新运行软件即可，无需再次购买。</span></div>
+</div></div>
 <div class="ft">汉化精灵 · 让每个人都能用上中文ChatGPT</div>
 </body></html>
